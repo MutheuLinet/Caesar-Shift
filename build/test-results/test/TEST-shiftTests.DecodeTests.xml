@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="shiftTests.DecodeTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-04-24T19:13:26" hostname="lyn-ThinkPad-X240" time="0.038">
+  <properties/>
+  <testcase name="Decode_decodesText_String()" classname="shiftTests.DecodeTests" time="0.031"/>
+  <testcase name="Decode_tryCatch_Exception()" classname="shiftTests.DecodeTests" time="0.002"/>
+  <testcase name="Decode_onlyActualStrings_Exception()" classname="shiftTests.DecodeTests" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

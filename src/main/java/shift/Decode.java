@@ -27,9 +27,14 @@ public class Decode {
                         decodedText+=shiftedLetter;
                     }
                 }
-            } else codedText+=letter;
-
+            }else {
+                decodedText += letter;
+            }
         }
+        return decodedText;
+    }
+
+    public String getDecodedText(){
         return decodedText;
     }
 }

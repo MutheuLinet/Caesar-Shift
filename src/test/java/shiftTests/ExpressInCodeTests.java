@@ -10,7 +10,7 @@ public class ExpressInCodeTests {
     @Test
     public void ExpressInCode_onlyActualStrings_Exception() throws Exception {
         ExpressInCode expressInCode = new ExpressInCode();
-        String inputted = expressInCode.putIntoCode("123", 1);
+        String inputted = expressInCode.putIntoCode("DCI", 1);
         assertTrue(inputted != null);
     }
 
