@@ -21,12 +21,12 @@ public class ExpressInCode {
                         expressedInCode += shiftedLetter;
                     }
                 } else if (Character.isLowerCase(letter)){
-                        char n = (char) (letter + shiftKey);
-                        if (n > 'z'){
+                        char shiftedLetter = (char) (letter + shiftKey);
+                        if (shiftedLetter > 'z'){
                             expressedInCode += (char) (letter-(26-shiftKey));
 
                         }else {
-                           expressedInCode += n;
+                           expressedInCode += shiftedLetter;
                         }
                 }
             }else {
