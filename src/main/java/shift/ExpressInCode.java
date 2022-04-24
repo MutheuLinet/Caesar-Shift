@@ -36,6 +36,8 @@ public class ExpressInCode {
         return expressedInCode;
     }
 
-
+    public String getExpressedInCode(){
+        return expressedInCode;
+    }
 }
 
