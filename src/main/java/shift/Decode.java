@@ -19,8 +19,15 @@ public class Decode {
                     } else {
                         decodedText+=shiftedLetter;
                     }
+                } else if (Character.isLowerCase(letter)){
+                    char shiftedLetter = (char)(letter-shiftKey);
+                    if (shiftedLetter>'a'){
+                        decodedText+=(char)(letter+(26-shiftKey));
+                    } else {
+                        decodedText+=shiftedLetter;
+                    }
                 }
-            }else codedText+=letter;
+            } else codedText+=letter;
 
         }
         return decodedText;
