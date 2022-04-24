@@ -20,6 +20,14 @@ public class ExpressInCode {
                     } else {
                         expressedInCode += shiftedLetter;
                     }
+                } else if (Character.isLowerCase(letter)){
+                        char n = (char) (letter + shiftKey);
+                        if (n > 'z'){
+                            expressedInCode += (char) (letter-(26-shiftKey));
+
+                        }else {
+                           expressedInCode += n;
+                        }
                 }
             }else {
                 expressedInCode += letter;
