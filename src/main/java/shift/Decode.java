@@ -10,6 +10,17 @@ public class Decode {
         int l = codedText.length();
 
         for (int i=0; i<l; i++){
+            char letter = codedText.charAt(i);
+            if (Character.isLetter(letter)){
+                if (Character.isUpperCase(letter)){
+                    char shiftedLetter = (char) (letter-shiftKey);
+                    if (shiftedLetter <'A'){
+                        decodedText+= (char)(letter+(26-shiftKey));
+                    } else {
+                        decodedText+=shiftedLetter;
+                    }
+                }
+            }else codedText+=letter;
 
         }
         return decodedText;
