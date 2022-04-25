@@ -2,23 +2,21 @@ package shiftTests;
 
 import org.junit.jupiter.api.Test;
 import shift.Decode;
-import shift.ExpressInCode;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class DecodeTests {
     @Test
     public void Decode_onlyActualStrings_Exception() throws Exception {
         Decode decode = new Decode();
         String inputted = decode.undoCode("ABC", 1);
-        assertTrue(inputted != null);
+        assertNotNull(inputted);
     }
     @Test
     public void Decode_tryCatch_Exception() {
         try {
             Decode decode = new Decode();
-            String inputted = decode.undoCode("THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG", 20);
+            String inputted = decode.undoCode("THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG", 30);
         } catch (Exception ex) {
             assertEquals("The shift key must be between 1 and 25", ex.getMessage());
         }
