@@ -31,3 +31,7 @@ To access this project on your local files, you can clone it using these steps
 ### License
 
 This project is under the [MIT](LICENSE) licence
+
+### Copyright
+
+Copyright (c) 2022 Linet Mutheu
