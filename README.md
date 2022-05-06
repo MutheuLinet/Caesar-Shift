@@ -36,6 +36,7 @@ The user is able to;
 
 ### Running Tests
 1. Navigate to the folder you cloned into, within src/test/java/shiftTests and open it with intellij. Select the DecodeTests or ExpressInCodeTests.
+
 2. This is a sample test to shift characters 23 steps forward from their original positions.
    
 @Test
@@ -48,7 +49,8 @@ Decode decode = new Decode();
 assertEquals ("THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG", inputted);
    
 }
-4. Right click within the open test file and run the tests on your terminal.
+
+3. Right click within the open test file and run the tests on your terminal.
 
 ### Technologies Used
 
